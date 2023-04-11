@@ -1,4 +1,3 @@
-//import React from 'react';
 import { Routes, Route } from "react-router-dom";
 import './App.css';
 import PaginaInicio from "./paginas/Inicio.pagina";
@@ -14,14 +13,10 @@ import { useEffect } from 'react';
  * @author Lucia Feretti
  * @returns {JSX.Element}
  */
-
 function App() {
   const dispatch = useDispatch();
-  //const characters = useSelector((state) => state.characters.list);
   const status = useSelector((state) => state.characters.status);
-  //const error = useSelector((state) => state.characters.error);
   const nextPage = useSelector((state) => state.characters.nextPage);
-
 
   useEffect(() => {
     if (status === 'idle') {

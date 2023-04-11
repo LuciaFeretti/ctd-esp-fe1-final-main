@@ -1,10 +1,11 @@
 import { useDispatch } from 'react-redux';
 import './boton-favorito.css';
-//import { useState } from 'react';
-// import charactersSlice, { toggleFavorite } from '../../redux/getPersonajeSlice';
 import { toggleFavorite } from '../../redux/getPersonajeSlice';
-//import { useSelector } from 'react-redux';
 import { Personaje } from '../../types/typesPersonajes';
+
+interface BotonFavoritoProps {
+    personaje: Personaje;
+}
 
 /**
  * Boton que indica si un elemento es favorito o no, y da la posibilidad de marcarlo/desmarcarlo
@@ -12,15 +13,8 @@ import { Personaje } from '../../types/typesPersonajes';
  * @param {Personaje} personaje
  * @returns JSX element 
  */
-
-interface BotonFavoritoProps {
-    personaje: Personaje; // Debes definir la interfaz del objeto Personaje
-}
-
 const BotonFavorito: React.FC<BotonFavoritoProps> = ({personaje}) => {
     const dispatch = useDispatch();
-    //const favoritesCharacters = useSelector((state: any) => state.characters.favoritesCharacters);
-    //const searchedCharacters = useSelector((state: any) => state.characters.searchedCharacters);
 
     const handleClick = () => {
         dispatch(toggleFavorite(personaje.id));

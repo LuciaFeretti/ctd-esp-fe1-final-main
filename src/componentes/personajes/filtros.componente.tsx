@@ -1,7 +1,6 @@
 import './filtros.css';
 import { searchCharacter } from '../../redux/getPersonajeSlice';
 import { useDispatch } from 'react-redux';
-// import { useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 
 interface FormValues {
@@ -28,7 +27,6 @@ const Filtros = ({reset, setReset}: {reset: boolean, setReset: (value: boolean) 
             setForm(initialForm)
         }
     }, [reset, dispatch, setReset])
-
 
     /**
      * Actualiza el estado del formulario con el valor actual del campo de entrada y llama a la acción searchCharacter

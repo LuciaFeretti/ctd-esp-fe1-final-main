@@ -1,23 +1,12 @@
 import { useState } from 'react';
 import './paginacion.css';
-//import { useSelector } from 'react-redux';
 
 interface PaginacionProps {
     setCurrentId: React.Dispatch<React.SetStateAction<number>>;
     currentId: number;
 }
 
-/**
- * Componente que contiene los botones para paginar
- * 
- * Deberás agregar las propiedades necesarias para que funcione correctamente
- * 
- * 
- * @returns un JSX element 
- */
 const Paginacion = ({setCurrentId, currentId}: PaginacionProps) => {
-    //const nextPage = useSelector((state: any) => state.characters.nextPage);
-
     const [disableNext, setDisableNext] = useState<boolean>(false)
     const [disablePrev, setDisablePrev] = useState<boolean>(true)
 

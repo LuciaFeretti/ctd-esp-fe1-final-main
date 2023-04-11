@@ -1,17 +1,7 @@
 import './grilla-personajes.css';
 import TarjetaPersonaje from './tarjeta-personaje.componente';
 import { useSelector } from 'react-redux';
-//import ListaPersonajes from './buscarPersonaje';
 import { Personaje } from '../../types/typesPersonajes';
-
-/**
- * Grilla de personajes para la pagina de inicio
- * 
- * Deberás agregar las funciones necesarias para mostrar y paginar los personajes
- * 
- * 
- * @returns un JSX element 
- */
 
 interface GrillaPersonajesProps {
     currentId: number;

@@ -2,10 +2,8 @@ import GrillaPersonajes from "../componentes/personajes/grilla-personajes.compon
 
 /**
  * Esta es la pagina de favoritos. Aquí se deberan ver todos los personajes marcados como favoritos
- * 
  * Uso: 
  * ``` <PaginaFavoritos /> ```
- * 
  * @returns la pagina de favoritos
  */
 
